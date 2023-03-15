@@ -131,23 +131,74 @@ code {
   display: flex;
   align-items: flex-start;
   flex-direction: column;
+  width: 50%;
+}
+.title{
+  font-size: 2.8rem;
+  letter-spacing: 0.08rem;
+  line-height: 3.2rem;
+  margin-bottom: 0;
 }
 .our_service{
   display: flex;
   align-items: center;
-  gap: 0.5rem;
+  column-gap: 0.5rem;
 }
 .line{
-  width: 30px;
-  height: auto;
+  width: 35px;
+  height: 3.9px;
+  background: #eeeeee;
+  border-radius: 20px;
+}
+.subtitle{
+  font-size: 1.0rem;
+  letter-spacing: 0.06rem;
+}
+.desc{
+  font-size: 1.108rem;
+  margin-bottom: 1.9rem;
+}
+.hero_btn{
+  width: 135px;
+  height: 33px;
+  background: transparent;
+  outline: none;
+  border: 2px solid #b73607;
+  color: #b73607;
+  font-size: 1.0rem;
+  font-weight: 500;
+  transition: 0.55s ease-out;
+  cursor: pointer;
+}
+.hero_btn:hover{
+  background: #b73607;
+  border: 2px solid #b73607;
+  color: #eeeeee;
 }
 .right_hero_section{
-  flex: 2;
+  width: 50%;
+  position: relative;
+  background: #b73607;
 }
-.moon{
-  width: 350px;
+.right_hero_section .moon{
+  width: 800px;
+  height: 600px;
+  object-fit: contain;
+  /* position: absolute; */
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  animation: animate 2s infinite ease alternate;
 }
 
+
+@keyframes animate{
+  to{
+    transform: translateY(25px);
+  }
+}
 
 
 

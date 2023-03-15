@@ -8,9 +8,9 @@ const Hero = () => {
         <Navbar />
         <div className="hero_container">
           <div className="left_hero_section">
-            <h5 className="title">Think. Make. Solve.</h5>
+            <h5 className="title">Think. Make. <br /> Solve.</h5>
             <div className="our_service">
-              <img src="./img/line.png" alt="" className="line" />
+              <div className="line"></div>
               <h6 className="subtitle">What we Do.</h6>
             </div>
             <p className="desc">
