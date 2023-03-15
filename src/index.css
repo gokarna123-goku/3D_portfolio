@@ -1,13 +1,184 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+/* ====================== Global Styling ====================== */
+::-webkit-scrollbar{
+  display: none;
+}
+
+
+/* ====================== Main Section ====================== */
+.main_section{
+  width: 100%;
+  height: 100%;
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+  overflow-y: auto;
+  color: #eeeeee;
+  background: url('../public/img/bg.jpeg');
+  background-size: cover;
+}
+
+
+/* ====================== Hero Section ====================== */
+.hero_section{
+  width: 100%;
+  height: 100vh;
+  /* background: #0e0e4b; */
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  scroll-snap-align: center;
+}
+
+.container{
+  width: 85%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.links{
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+.logo{
+  width: 70px;
+  height: auto;
+  cursor: pointer;
+}
+.nav_items{
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.nav_link{
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #eeeeee;
+  letter-spacing: 0.07rem;
+}
+.nav_link .active{
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #b73607;
+  letter-spacing: 0.07rem;
+  border-bottom: 2px solid #b73607;
+}
+.nav_link a{
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #eeeeee;
+  border-bottom: 2px solid transparent;
+  transition: 0.5s ease-out;
+}
+.nav_link a:hover{
+  color: #b73607;
+  border-bottom: 2px solid #b73607;
+}
+/*  */
+.icons{
+  display: flex;
+  align-items: center;
+  gap: 01rem;
+}
+.search{
+  width: 20px;
+  height: auto;
+  cursor: pointer;
+}
+.hire_btn{
+  width: 90px;
+  height: 27px;
+  font-size: 1.0rem;
+  background: #b73607;
+  outline: none;
+  border: 1px solid #b73607;
+  border-radius: 4px;
+  color: #eeeeee;
+  transition: 0.55s ease-out;
+  cursor: pointer;
+}
+.hire_btn:hover{
+  background: transparent;
+  border: 1px solid #b73607;
+  color: #b73607;
+}
+
+/*  */
+.hero_container{
+  width: 85%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+.left_hero_section{
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.our_service{
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.line{
+  width: 30px;
+  height: auto;
+}
+.right_hero_section{
+  flex: 2;
+}
+.moon{
+  width: 350px;
+}
+
+
+
+
+/* ====================== Who Section ====================== */
+.who_section{
+  width: 100%;
+  height: 100vh;
+  /* background: #21215c; */
+  scroll-snap-align: center;
+}
+
+
+
+/* ====================== Work Section ====================== */
+.work_section{
+  width: 100%;
+  height: 100vh;
+  /* background: #25259e; */
+  scroll-snap-align: center;
+}
+
+
+
+/* ====================== Contact Section ====================== */
+.contact_section{
+  width: 100%;
+  height: 100vh;
+  /* background: #191965; */
+  scroll-snap-align: center;
+}
+
+
+
+/* ====================== End Styling ====================== */
